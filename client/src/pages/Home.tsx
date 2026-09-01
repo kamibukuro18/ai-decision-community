@@ -1,9 +1,9 @@
 /**
  * Design reminder — Salon After Hours:
- * A private, editorial Japanese salon. Use asymmetry, paper-like surfaces, ember accents,
- * and restrained motion to make honest peer dialogue feel safe and considered.
+ * Quiet Systems: use asymmetric editorial rhythm, electric-blue signal lines and restrained motion
+ * to make executive dialogue feel precise, secure, and human.
  */
-import { ArrowDownRight, ArrowUpRight, Check, CircleDotDashed, CornerDownRight, Sparkles } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Check, CircleDotDashed, CornerDownRight } from "lucide-react";
 
 const principles = [
   {
@@ -34,7 +34,7 @@ export default function Home() {
     <main className="site-shell overflow-hidden bg-[#111719] text-[#F6F0E5]">
       <header className="site-nav">
         <a className="brand" href="#top" aria-label="共同体 トップへ">
-          <img src="/manus-storage/kyodotai-mark_7878b626.png" alt="共同体のロゴマーク" />
+          <img src="/manus-storage/kyodotai-blue-mark_1073ec8c.png" alt="共同体のロゴマーク" />
           <span className="brand-type">
             <strong>共同体</strong>
             <small>CO-DECIDE</small>
@@ -48,7 +48,7 @@ export default function Home() {
 
       <section id="top" className="hero-section">
         <div className="hero-visual" aria-hidden="true">
-          <img src="/manus-storage/kyodotai-hero-salon_ef38aa06.png" alt="" />
+          <img src="/manus-storage/kyodotai-blue-hero_b02fcf1a.png" alt="" />
           <div className="hero-wash" />
           <div className="hero-grain" />
         </div>
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
         <div className="thread-drawing" aria-hidden="true">
           <svg viewBox="0 0 960 200" preserveAspectRatio="none"><path d="M-10,80 C155,190 222,20 395,93 S646,193 760,92 S906,15 980,86" /></svg>
-          <span>THE AMBER THREAD</span>
+          <span>DECISION TRACE / 01</span>
         </div>
       </section>
 
@@ -114,7 +114,7 @@ export default function Home() {
 
       <section className="room-section">
         <div className="room-art">
-          <div className="room-photo-wrap"><img src="/manus-storage/kyodotai-notes_13279c55.png" alt="静かな机上に置かれた、対話と実験のためのノート" /></div>
+          <div className="room-photo-wrap"><img src="/manus-storage/kyodotai-blue-notes_98a35e5f.png" alt="静かな机上に置かれた、対話と実験のためのノート" /></div>
           <div className="room-stamp">NO PERFECT<br />ANSWERS</div>
           <div className="room-caption"><span>FIELD NOTES</span><span>— 02:17 AM</span></div>
         </div>
@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       <section className="image-statement-section">
-        <img src="/manus-storage/kyodotai-circle_f93362cb.png" alt="異なる視点が一つの方向へ収束することを表す、琥珀色の円弧のオブジェ" />
+        <img src="/manus-storage/kyodotai-blue-circle_841c9600.png" alt="異なる視点が一つの方向へ収束することを表す、青い円弧のオブジェ" />
         <div className="image-statement-overlay" />
         <div className="image-statement-copy">
           <p className="eyebrow"><span /> A SMALL CIRCLE, WIDE HORIZON</p>
@@ -158,6 +158,7 @@ export default function Home() {
       </section>
 
       <section id="membership" className="membership-section">
+        <div className="membership-geometry" aria-hidden="true"><i /><i /><span /></div>
         <div className="section-rail section-rail--light"><span>04</span><i /></div>
         <div className="membership-layout">
           <div className="membership-intro">
@@ -191,7 +192,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="brand" href="#top">
-          <img src="/manus-storage/kyodotai-mark_7878b626.png" alt="" />
+          <img src="/manus-storage/kyodotai-blue-mark_1073ec8c.png" alt="" />
           <span className="brand-type"><strong>共同体</strong><small>CO-DECIDE</small></span>
         </a>
         <p>THE COMMUNITY FOR EXPERIMENTS &amp; DECISIONS.</p>
