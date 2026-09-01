@@ -1,7 +1,7 @@
 /**
  * Design reminder — Salon After Hours:
- * Quiet Systems: use asymmetric editorial rhythm, electric-blue signal lines and restrained motion
- * to make executive dialogue feel precise, secure, and human.
+ * Quiet Systems Light: use an editorial white canvas, navy information hierarchy, blue signal lines,
+ * and restrained motion to make executive dialogue feel precise, open, and human.
  */
 import { ArrowDownRight, ArrowUpRight, Check, CircleDotDashed, CornerDownRight } from "lucide-react";
 
@@ -31,7 +31,7 @@ const moments = [
 
 export default function Home() {
   return (
-    <main className="site-shell overflow-hidden bg-[#111719] text-[#F6F0E5]">
+    <main className="site-shell overflow-hidden bg-white text-[#071a3a]">
       <header className="site-nav">
         <a className="brand brand--lockup" href="#top" aria-label="AI羅針盤 トップへ">
           <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal_14400c38.png" alt="AI羅針盤" /></span>

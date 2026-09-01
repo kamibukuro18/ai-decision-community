@@ -1,4 +1,4 @@
-/* Design reminder — Quiet Systems: editorial asymmetry, navy depth, cobalt signals and Gothic clarity. */
+/* Design reminder — Quiet Systems Light: white editorial canvas, navy hierarchy, cobalt signals and Gothic clarity. */
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -18,8 +18,8 @@
 }
 
 :root {
-  --background: #07101f;
-  --foreground: #f3f8ff;
+  --background: #ffffff;
+  --foreground: #071a3a;
   --primary: #2477ff;
   --primary-foreground: #07101f;
   --border: rgba(208, 225, 255, 0.16);
@@ -27,7 +27,7 @@
 }
 
 * { border-color: var(--border); }
-html { scroll-behavior: smooth; background: #07101f; }
+html { scroll-behavior: smooth; background: #ffffff; }
 body { margin: 0; background: var(--background); color: var(--foreground); font-family: "Noto Sans JP", sans-serif; }
 ::selection { background: #2477ff; color: #07101f; }
 
@@ -72,19 +72,19 @@ h1 em, h2 em { color: #75adff; font-style: normal; }
 .section-rail span { color: #2477ff; font-family: "DM Mono", monospace; font-size: 10px; writing-mode: vertical-rl; }
 .section-rail i { width: 1px; flex: 1; margin-top: 14px; background: rgba(211,227,255,.22); }
 .section-rail--light i { background: rgba(4,22,55,.26); }
-.manifesto-section { position: relative; padding: clamp(100px, 13vw, 190px) clamp(20px, 10vw, 170px) 78px clamp(84px, 17.2vw, 278px); background: #07101f; }
+.manifesto-section { position: relative; padding: clamp(100px, 13vw, 190px) clamp(20px, 10vw, 170px) 78px clamp(84px, 17.2vw, 278px); background: #ffffff; }
 .manifesto-grid { display: grid; grid-template-columns: minmax(120px, 1.2fr) minmax(0, 4fr); gap: 40px; }
-.section-kicker { color: #75adff; }
-.manifesto-lead { margin: -12px 0 60px; color: #f3f8ff; font-family: "Noto Sans JP", sans-serif; font-size: clamp(29px, 3.75vw, 53px); font-weight: 700; letter-spacing: -.075em; line-height: 1.5; }
+.section-kicker { color: #1662d6; }
+.manifesto-lead { margin: -12px 0 60px; color: #071a3a; font-family: "Noto Sans JP", sans-serif; font-size: clamp(29px, 3.75vw, 53px); font-weight: 700; letter-spacing: -.075em; line-height: 1.5; }
 .manifesto-body { display: grid; max-width: 640px; grid-template-columns: 1fr 1fr; gap: 39px; }
-.manifesto-body p { margin: 0; color: rgba(218,232,255,.7); font-size: 13px; line-height: 2.1; }
-.manifesto-body strong { color: #f3f8ff; font-weight: 700; }
+.manifesto-body p { margin: 0; color: rgba(7,26,58,.72); font-size: 13px; line-height: 2.1; }
+.manifesto-body strong { color: #071a3a; font-weight: 700; }
 .thread-drawing { position: relative; margin: 76px -10vw 0 -13vw; height: 150px; overflow: hidden; }
 .thread-drawing svg { position: absolute; top: 12px; width: 100%; height: 105px; overflow: visible; }
 .thread-drawing path { fill: none; stroke: #2477ff; stroke-dasharray: 5 6; stroke-width: 1.4; }
-.thread-drawing span { position: absolute; bottom: 0; left: 18%; color: rgba(211,227,255,.5); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .18em; }
+.thread-drawing span { position: absolute; bottom: 0; left: 18%; color: rgba(7,26,58,.5); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .18em; }
 
-.principles-section { position: relative; padding: clamp(100px, 11vw, 155px) clamp(20px, 10vw, 170px) clamp(90px, 10vw, 146px) clamp(84px, 17.2vw, 278px); background: #dce8fa; color: #071a3a; }
+.principles-section { position: relative; padding: clamp(100px, 11vw, 155px) clamp(20px, 10vw, 170px) clamp(90px, 10vw, 146px) clamp(84px, 17.2vw, 278px); background: #f5f8fe; color: #071a3a; }
 .principles-heading { display: grid; grid-template-columns: minmax(120px, 1.2fr) minmax(0, 4fr); gap: 40px; margin-bottom: clamp(70px, 8vw, 112px); }
 .principles-heading .section-kicker { color: #1662d6; }
 .principles-heading h2, .room-copy h2, .rhythm-section h2, .membership-intro h2, .closing-section h2 { margin: -13px 0 0; font-family: "Noto Sans JP", sans-serif; font-size: clamp(31px, 4.25vw, 61px); font-weight: 800; letter-spacing: -.09em; line-height: 1.38; }
@@ -96,7 +96,7 @@ h1 em, h2 em { color: #75adff; font-style: normal; }
 .principle-row p { margin: 0; color: rgba(7,26,58,.72); font-size: 12px; line-height: 1.95; }
 .principle-arrow { color: #1662d6; }
 
-.room-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(310px, 1fr); min-height: 690px; background: #0c1930; }
+.room-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(310px, 1fr); min-height: 690px; background: #ffffff; }
 .room-art { position: relative; min-height: 530px; overflow: hidden; }
 .room-photo-wrap { position: absolute; inset: 0; overflow: hidden; }
 .room-photo-wrap::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, rgba(4,14,33,.16), rgba(4,14,33,.28)); }
@@ -105,22 +105,22 @@ h1 em, h2 em { color: #75adff; font-style: normal; }
 .room-stamp { position: absolute; top: 52px; left: clamp(25px, 6vw, 92px); width: 112px; height: 112px; display: grid; place-items: center; border: 1px solid rgba(211,227,255,.65); border-radius: 50%; color: #f3f8ff; font-family: "DM Mono", monospace; font-size: 9px; letter-spacing: .1em; line-height: 1.6; text-align: center; transform: rotate(-15deg); }
 .room-caption { position: absolute; right: clamp(22px, 4vw, 65px); bottom: 25px; left: clamp(25px, 6vw, 92px); display: flex; justify-content: space-between; color: rgba(211,227,255,.7); font-family: "DM Mono", monospace; font-size: 8px; letter-spacing: .13em; }
 .room-copy { position: relative; display: flex; flex-direction: column; justify-content: center; padding: clamp(70px, 9vw, 142px) clamp(32px, 9vw, 138px); }
-.room-copy h2 { margin-top: 21px; color: #f3f8ff; }
-.room-copy > p:not(.section-kicker):not(.pullquote) { max-width: 440px; margin: 43px 0 8px; color: rgba(218,232,255,.72); font-size: 13px; line-height: 2.15; }
+.room-copy h2 { margin-top: 21px; color: #071a3a; }
+.room-copy > p:not(.section-kicker):not(.pullquote) { max-width: 440px; margin: 43px 0 8px; color: rgba(7,26,58,.72); font-size: 13px; line-height: 2.15; }
 .quote-mark { margin-top: 43px; color: #2477ff; font-family: "Noto Sans JP", sans-serif; font-size: 62px; font-weight: 800; line-height: .6; }
-.room-copy .pullquote { margin: 8px 0 0; color: #f3f8ff; font-family: "Noto Sans JP", sans-serif; font-size: 18px; font-weight: 700; letter-spacing: -.04em; line-height: 1.8; }
+.room-copy .pullquote { margin: 8px 0 0; color: #071a3a; font-family: "Noto Sans JP", sans-serif; font-size: 18px; font-weight: 700; letter-spacing: -.04em; line-height: 1.8; }
 
-.rhythm-section { position: relative; padding: clamp(100px, 11vw, 155px) clamp(20px, 10vw, 170px) clamp(90px, 10vw, 150px) clamp(84px, 17.2vw, 278px); background: #07101f; }
+.rhythm-section { position: relative; padding: clamp(100px, 11vw, 155px) clamp(20px, 10vw, 170px) clamp(90px, 10vw, 150px) clamp(84px, 17.2vw, 278px); background: #ffffff; }
 .rhythm-top { display: flex; justify-content: space-between; gap: 50px; }
-.rhythm-top h2 { margin-top: 17px; color: #f3f8ff; }
-.rhythm-top > p { max-width: 340px; margin: 45px 0 0; color: rgba(211,227,255,.65); font-size: 13px; line-height: 2.05; }
+.rhythm-top h2 { margin-top: 17px; color: #071a3a; }
+.rhythm-top > p { max-width: 340px; margin: 45px 0 0; color: rgba(7,26,58,.66); font-size: 13px; line-height: 2.05; }
 .moments-line { display: flex; align-items: center; margin: 90px 0 38px; }
-.moments-line span { width: 9px; height: 9px; border: 1px solid #2477ff; border-radius: 999px; background: #07101f; }
+.moments-line span { width: 9px; height: 9px; border: 1px solid #2477ff; border-radius: 999px; background: #ffffff; }
 .moments-line i { height: 1px; flex: 1; background: linear-gradient(90deg, #2477ff, rgba(36,119,255,.12)); }
 .moments-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
 .moment-time { display: block; margin-bottom: 21px; color: #75adff; font-family: "DM Mono", monospace; font-size: 9px; letter-spacing: .15em; }
-.moments-grid h3 { margin: 0; color: #f3f8ff; font-family: "Noto Sans JP", sans-serif; font-size: clamp(19px, 1.85vw, 26px); font-weight: 800; letter-spacing: -.065em; }
-.moments-grid p { margin: 12px 0 0; color: rgba(211,227,255,.62); font-size: 12px; line-height: 1.8; }
+.moments-grid h3 { margin: 0; color: #071a3a; font-family: "Noto Sans JP", sans-serif; font-size: clamp(19px, 1.85vw, 26px); font-weight: 800; letter-spacing: -.065em; }
+.moments-grid p { margin: 12px 0 0; color: rgba(7,26,58,.66); font-size: 12px; line-height: 1.8; }
 
 .image-statement-section { position: relative; min-height: clamp(460px, 51vw, 720px); overflow: hidden; background: #0b1730; }
 .image-statement-section > img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.67) contrast(1.08); }

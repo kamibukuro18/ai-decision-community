@@ -1,4 +1,4 @@
-/** Design reminder — Salon After Hours: preserve the dark editorial canvas at the application frame. */
+/** Design reminder — Quiet Systems Light: preserve the white editorial canvas and blue information hierarchy. */
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
 import { Route, Switch } from "wouter";
@@ -20,7 +20,7 @@ function Router() {
 export default function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider><Toaster /><Router /></TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
