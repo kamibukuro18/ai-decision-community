@@ -34,7 +34,13 @@ body { margin: 0; background: var(--background); color: var(--foreground); font-
 .site-shell { min-width: 320px; }
 .site-nav { position: absolute; z-index: 20; top: 0; left: 0; display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 23px clamp(20px, 4vw, 68px); }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: #f3f8ff; text-decoration: none; }
-.brand img { width: 32px; height: 32px; object-fit: contain; }
+.brand > img { width: 32px; height: 32px; border-radius: 50%; object-fit: contain; }
+.brand-lockup-crop { display: block; width: 186px; height: 48px; overflow: hidden; border-radius: 2px; background: #fff; }
+.brand-lockup-crop img { display: block; width: 186px; max-width: none; height: auto; transform: translateY(-36px); }
+.brand--lockup { transition: opacity 180ms cubic-bezier(.23,1,.32,1); }
+.brand--lockup:hover { opacity: .88; }
+.brand--lockup-footer .brand-lockup-crop { width: 158px; height: 41px; }
+.brand--lockup-footer .brand-lockup-crop img { width: 158px; transform: translateY(-30px); }
 .brand-type { display: grid; line-height: 1; gap: 4px; }
 .brand-type strong { font-family: "Noto Sans JP", sans-serif; font-size: 16px; font-weight: 800; letter-spacing: .12em; }
 .brand-type small { color: #75adff; font-family: "DM Mono", monospace; font-size: 7px; letter-spacing: .18em; }
@@ -157,7 +163,7 @@ h1 em, h2 em { color: #75adff; font-style: normal; }
 }
 
 @media (max-width: 760px) {
-  .site-nav { padding-top: 19px; }.brand img { width: 30px; height: 30px; }.brand-type strong { font-size: 16px; }.nav-cta { font-size: 10px; }
+  .site-nav { padding-top: 19px; }.brand > img { width: 30px; height: 30px; }.brand-lockup-crop { width: 146px; height: 38px; }.brand-lockup-crop img { width: 146px; transform: translateY(-28px); }.brand--lockup-footer .brand-lockup-crop { width: 122px; height: 32px; }.brand--lockup-footer .brand-lockup-crop img { width: 122px; transform: translateY(-23px); }.brand-type strong { font-size: 16px; }.nav-cta { font-size: 10px; }
   .hero-section { min-height: 720px; }.hero-visual img { object-position: 62% center; }.hero-wash { background: linear-gradient(90deg, rgba(10,15,17,.88), rgba(10,15,17,.37)), linear-gradient(0deg, rgba(10,15,17,.79), transparent 57%); }.hero-layout { grid-template-columns: 28px minmax(0, 1fr); padding-top: 135px; padding-bottom: 90px; }.hero-copy { padding-left: 14px; }.hero-index { height: 216px; font-size: 7px; }.hero-copy h1 { margin-top: 20px; font-size: clamp(42px, 12vw, 64px); line-height: 1.3; }.hero-bottom { gap: 20px; }.hero-bottom p { font-size: 12px; }.circle-link { width: 45px; height: 45px; }.hero-footnote > span:last-child { display: none; }
   .section-rail { left: 25px; padding-top: 58px; }.manifesto-section, .principles-section, .rhythm-section, .membership-section { padding-right: 24px; padding-left: 72px; }.manifesto-grid, .principles-heading { grid-template-columns: 1fr; gap: 24px; }.manifesto-lead { margin: 0 0 34px; font-size: 30px; }.manifesto-body { grid-template-columns: 1fr; gap: 18px; }.thread-drawing { margin: 60px -24px 0 -72px; height: 105px; }.thread-drawing span { left: 22%; }
   .principles-heading { margin-bottom: 48px; }.principles-heading h2 { margin: 0; }.principle-row { grid-template-columns: 38px 1fr 18px; gap: 12px; padding: 25px 0; }.principle-row h3 { font-size: 19px; }.principle-row p { grid-column: 2 / 4; padding-right: 12px; }.principle-arrow { grid-column: 3; grid-row: 1; }.principle-row:hover { padding-left: 3px; padding-right: 3px; }
