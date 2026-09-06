@@ -1,0 +1,267 @@
+/* Design reminder — AI Compass Readable Dossier: generous body text, calm line-height, moderate headings, and compact labels that remain legible. */
+
+/*
+ * Type scale principle
+ * 1. Main reading text begins at 16px (14px on compact mobile screens).
+ * 2. Metadata and labels never fall below 11px on desktop / 10px on mobile.
+ * 3. Headline scale is restrained so it supports — rather than overwhelms — the content.
+ */
+.site-shell {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.site-shell .eyebrow,
+.site-shell .section-kicker {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  line-height: 1.65;
+}
+
+.site-shell .hero-eyebrow-note,
+.site-shell .hero-lead,
+.site-shell .section-intro > p,
+.site-shell .definition-copy > p,
+.site-shell .section-heading-row > p,
+.site-shell .inside-copy > p:not(.inside-footnote),
+.site-shell .registration-copy > p,
+.site-shell .closing-content > p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.site-shell .hero-copy h1 {
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 1.26;
+}
+
+.site-shell .section-intro h2,
+.site-shell .section-heading-row h2,
+.site-shell .definition-copy h2,
+.site-shell .inside-copy h2,
+.site-shell .registration-copy h2,
+.site-shell .faq-layout h2,
+.site-shell .closing-content h2 {
+  font-size: clamp(36px, 3.6vw, 54px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.42;
+}
+
+.site-shell .hero-actions > p,
+.site-shell .hero-actions strong,
+.site-shell .hero-trace,
+.site-shell .hero-stage > p,
+.site-shell .section-index::before,
+.site-shell .section-index span,
+.site-shell .concern-card > span,
+.site-shell .definition-visual span,
+.site-shell .definition-rule span,
+.site-shell .pillar-top span,
+.site-shell .pillar-label,
+.site-shell .inside-footnote,
+.site-shell .video-topline,
+.site-shell .video-caption,
+.site-shell .host-dossier > span,
+.site-shell .host-dossier small,
+.site-shell .host-card > p,
+.site-shell .plan-type,
+.site-shell .plan-price small,
+.site-shell .plan-price span,
+.site-shell .plan-detail,
+.site-shell .faq-item summary span,
+.site-shell .footer-details,
+.site-shell .site-footer > span {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  line-height: 1.75;
+}
+
+.site-shell .line-cta-copy small {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+}
+
+.site-shell .line-cta-copy b,
+.site-shell .nav-line-cta .line-cta-copy b {
+  font-size: 13px;
+}
+
+.site-shell .concern-card h3 {
+  font-size: 22px;
+  letter-spacing: -0.045em;
+  line-height: 1.55;
+}
+
+.site-shell .concern-card p,
+.site-shell .compass-note p,
+.site-shell .pillar-copy p,
+.site-shell .host-card > span,
+.site-shell .plan-for,
+.site-shell .plan-card li,
+.site-shell .faq-item > p {
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.site-shell .compass-note p,
+.site-shell .pillar-copy p,
+.site-shell .plan-for,
+.site-shell .plan-card li {
+  color: #52647d;
+}
+
+.site-shell .pillar-copy b {
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+
+.site-shell .pillar-card h3 {
+  font-size: 25px;
+  letter-spacing: -0.045em;
+  line-height: 1.5;
+}
+
+.site-shell .video-caption strong {
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.site-shell .host-card h3 {
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+
+.site-shell .host-dossier strong {
+  font-size: 31px;
+  letter-spacing: -0.065em;
+  line-height: 1.36;
+}
+
+.site-shell .plan-card h3 {
+  font-size: 32px;
+  letter-spacing: -0.04em;
+}
+
+.site-shell .plan-price {
+  font-size: 22px;
+}
+
+.site-shell .invoice-note {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.site-shell .faq-item summary b {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Hero: retain the calm verification-room image, but replace the in-image logo with an abstract decision trace. */
+.hero-compass-mark {
+  display: none;
+}
+
+.hero-stage::before {
+  position: absolute;
+  z-index: 2;
+  top: 18%;
+  right: 14%;
+  width: min(34vw, 300px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(134, 190, 255, 0.55);
+  border-left-color: transparent;
+  border-radius: 50%;
+  content: "";
+}
+
+.hero-stage::after {
+  position: absolute;
+  z-index: 2;
+  top: 54%;
+  right: 8%;
+  width: min(42vw, 360px);
+  height: 1px;
+  background: rgba(134, 190, 255, 0.68);
+  content: "";
+  transform: rotate(-26deg);
+}
+
+.hero-stage > p {
+  z-index: 3;
+}
+
+@media (max-width: 640px) {
+  .site-shell .eyebrow,
+  .site-shell .section-kicker {
+    font-size: 11px;
+    letter-spacing: 0.07em;
+  }
+
+  .site-shell .hero-copy h1 {
+    font-size: clamp(42px, 12vw, 52px);
+    letter-spacing: -0.055em;
+    line-height: 1.28;
+  }
+
+  .site-shell .section-intro h2,
+  .site-shell .section-heading-row h2,
+  .site-shell .definition-copy h2,
+  .site-shell .inside-copy h2,
+  .site-shell .registration-copy h2,
+  .site-shell .faq-layout h2,
+  .site-shell .closing-content h2 {
+    font-size: 34px;
+    letter-spacing: -0.05em;
+    line-height: 1.45;
+  }
+
+  .site-shell .hero-eyebrow-note,
+  .site-shell .hero-lead,
+  .site-shell .section-intro > p,
+  .site-shell .definition-copy > p,
+  .site-shell .section-heading-row > p,
+  .site-shell .inside-copy > p:not(.inside-footnote),
+  .site-shell .registration-copy > p,
+  .site-shell .closing-content > p {
+    font-size: 15px;
+    line-height: 1.95;
+  }
+
+  .site-shell .hero-actions > p,
+  .site-shell .hero-actions strong,
+  .site-shell .hero-trace,
+  .site-shell .hero-stage > p,
+  .site-shell .section-index::before,
+  .site-shell .section-index span,
+  .site-shell .concern-card > span,
+  .site-shell .definition-visual span,
+  .site-shell .definition-rule span,
+  .site-shell .pillar-top span,
+  .site-shell .pillar-label,
+  .site-shell .inside-footnote,
+  .site-shell .video-topline,
+  .site-shell .video-caption,
+  .site-shell .host-dossier > span,
+  .site-shell .host-dossier small,
+  .site-shell .host-card > p,
+  .site-shell .plan-type,
+  .site-shell .plan-price small,
+  .site-shell .plan-price span,
+  .site-shell .plan-detail,
+  .site-shell .faq-item summary span,
+  .site-shell .footer-details,
+  .site-shell .site-footer > span {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .site-shell .line-cta-copy small { font-size: 9px; }
+  .site-shell .line-cta-copy b, .site-shell .nav-line-cta .line-cta-copy b { font-size: 12px; }
+  .site-shell .concern-card h3 { font-size: 20px; }.site-shell .concern-card p, .site-shell .compass-note p, .site-shell .pillar-copy p, .site-shell .host-card > span, .site-shell .plan-for, .site-shell .plan-card li, .site-shell .faq-item > p { font-size: 14px; line-height: 1.9; }
+  .site-shell .pillar-card h3 { font-size: 22px; }.site-shell .pillar-copy b { font-size: 11px; }.site-shell .host-dossier strong { font-size: 28px; }.site-shell .host-card h3 { font-size: 20px; }.site-shell .plan-card h3 { font-size: 30px; }.site-shell .plan-price { font-size: 21px; }.site-shell .invoice-note { font-size: 14px; }.site-shell .faq-item summary b { font-size: 15px; }.site-shell .video-caption strong { font-size: 18px; }
+  .hero-stage::before { top: 16%; right: 16%; width: 200px; }.hero-stage::after { top: 57%; right: 5%; width: 230px; }
+}

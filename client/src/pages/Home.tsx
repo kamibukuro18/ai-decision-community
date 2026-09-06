@@ -150,10 +150,9 @@ export default function Home() {
           </div>
           <div className="hero-trace" aria-hidden="true"><i /><span>DECISION TRACE / 01</span></div>
         </div>
-        <div className="hero-stage" aria-label="AI羅針盤を表す、羅針盤と検証室のビジュアル">
+        <div className="hero-stage" aria-label="意思決定を検証する静かな空間を表す抽象ビジュアル">
           <img className="hero-stage-photo" src="/manus-storage/kyodotai-blue-hero_b02fcf1a.png" alt="" />
           <div className="hero-stage-tint" />
-          <div className="hero-compass-mark"><img src="/manus-storage/rashinbanrogo_4cdaa0ed.png" alt="" /></div>
           <p>DO NOT BUY<br />WHAT YOU CANNOT JUDGE.</p>
         </div>
       </section>
