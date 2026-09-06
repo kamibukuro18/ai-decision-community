@@ -188,7 +188,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="brand brand--lockup brand--lockup-footer" href="#top" aria-label="AI羅針盤 トップへ">
-          <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal_14400c38.png" alt="AI羅針盤" /></span>
+          <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal-transparent_1c27e302.png" alt="AI羅針盤" /></span>
         </a>
         <p>THE COMMUNITY FOR EXPERIMENTS &amp; DECISIONS.</p>
         <span>© 2026 KYODOTAI</span>
