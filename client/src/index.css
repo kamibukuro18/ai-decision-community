@@ -173,3 +173,30 @@ h1 em, h2 em { color: #75adff; font-style: normal; }
   .image-statement-section { min-height: 490px; }.image-statement-section > img { object-position: 57% center; }.image-statement-overlay { background: linear-gradient(90deg, rgba(11,16,18,.85), rgba(11,16,18,.34)); }.image-statement-copy { padding: 120px 32px 60px; }.image-statement-copy h2 { font-size: 32px; }
   .membership-layout { grid-template-columns: 1fr; gap: 35px; }.membership-geometry { top: 25%; right: -130px; width: 360px; }.membership-content { padding-top: 0; }.membership-intro h2 { font-size: 35px; }.membership-lead { font-size: 20px; }.membership-content ul { margin-top: 30px; }.closing-section h2 { font-size: 33px; }.closing-note { font-size: 11px; }.site-footer { display: grid; grid-template-columns: 1fr auto; }.site-footer p { display: none; }.site-footer > span { text-align: right; }
 }
+
+/* Readability pass — maintain the editorial hierarchy while ensuring no meaningful text is too small to read. */
+.brand-type small { font-size: 10px; letter-spacing: .12em; }
+.nav-cta { font-size: 14px; font-weight: 700; }
+.hero-index { font-size: 10px; letter-spacing: .12em; }
+.eyebrow, .section-kicker { font-size: 12px; letter-spacing: .12em; line-height: 1.6; }
+.hero-bottom p { font-size: 16px; line-height: 1.9; }
+.hero-footnote { font-size: 10px; letter-spacing: .1em; }
+.manifesto-body p { font-size: 15px; line-height: 2; }
+.thread-drawing span { font-size: 10px; letter-spacing: .12em; }
+.principle-number { font-size: 11px; }
+.principle-row p { font-size: 14px; line-height: 1.9; }
+.room-stamp { font-size: 10px; letter-spacing: .08em; }
+.room-caption { font-size: 10px; letter-spacing: .1em; }
+.room-copy > p:not(.section-kicker):not(.pullquote) { font-size: 15px; line-height: 2; }
+.rhythm-top > p { font-size: 15px; line-height: 2; }
+.moment-time { font-size: 11px; letter-spacing: .11em; }
+.moments-grid p { font-size: 14px; line-height: 1.85; }
+.membership-content li { font-size: 14px; line-height: 1.75; }
+.text-cta { font-size: 15px; }
+.closing-note { font-size: 15px; line-height: 1.9; }
+.closing-cta { font-size: 15px; }
+.site-footer p, .site-footer > span { font-size: 10px; letter-spacing: .08em; }
+
+@media (max-width: 760px) {
+  .nav-cta { font-size: 12px; }.hero-index { font-size: 9px; }.eyebrow, .section-kicker { font-size: 11px; }.hero-bottom p { font-size: 14px; }.hero-footnote { font-size: 9px; }.manifesto-body p { font-size: 14px; }.thread-drawing span { font-size: 9px; }.principle-number { font-size: 10px; }.principle-row p { font-size: 14px; }.room-stamp, .room-caption { font-size: 9px; }.room-copy > p:not(.section-kicker):not(.pullquote) { font-size: 14px; }.rhythm-top > p { font-size: 14px; }.moment-time { font-size: 10px; }.moments-grid p { font-size: 14px; }.membership-content li { font-size: 14px; }.text-cta { font-size: 14px; }.closing-note { font-size: 14px; }.closing-cta { font-size: 14px; }.site-footer p, .site-footer > span { font-size: 9px; }
+}
