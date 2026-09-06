@@ -191,6 +191,13 @@ export default function Home() {
           <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal-transparent_1c27e302.png" alt="AI羅深盤" /></span>
         </a>
         <p>THE COMMUNITY FOR EXPERIMENTS &amp; DECISIONS.</p>
+        <p className="site-footer__operator">
+          運営：株式会社GAIBAKO
+          <br />
+          埼玉県朝霞市溝沼7-5-16
+          <br />
+          お問い合わせ：<a href="mailto:info@gaibako.com">info@gaibako.com</a>
+        </p>
         <span>© 2026 KYODOTAI</span>
       </footer>
     </main>
