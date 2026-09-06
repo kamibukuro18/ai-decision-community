@@ -33,8 +33,8 @@ export default function Home() {
   return (
     <main className="site-shell overflow-hidden bg-white text-[#071a3a]">
       <header className="site-nav">
-        <a className="brand brand--lockup" href="#top" aria-label="AI羅針盤 トップへ">
-          <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal_14400c38.png" alt="AI羅針盤" /></span>
+        <a className="brand brand--lockup" href="#top" aria-label="AI羅深盤 トップへ">
+          <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal_14400c38.png" alt="AI羅深盤" /></span>
         </a>
         <a className="nav-cta" href="#membership">
           <span>参加について</span>
@@ -187,8 +187,8 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <a className="brand brand--lockup brand--lockup-footer" href="#top" aria-label="AI羅針盤 トップへ">
-          <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal-transparent_1c27e302.png" alt="AI羅針盤" /></span>
+        <a className="brand brand--lockup brand--lockup-footer" href="#top" aria-label="AI羅深盤 トップへ">
+          <span className="brand-lockup-crop"><img src="/manus-storage/ai-rashinban-horizontal-transparent_1c27e302.png" alt="AI羅深盤" /></span>
         </a>
         <p>THE COMMUNITY FOR EXPERIMENTS &amp; DECISIONS.</p>
         <span>© 2026 KYODOTAI</span>
