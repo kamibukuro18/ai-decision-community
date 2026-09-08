@@ -1277,6 +1277,7 @@ em {
   margin-top: 8px;
 }
 
+.terms-section li > ol,
 .terms-section li > ul {
   margin-top: 8px;
 }
