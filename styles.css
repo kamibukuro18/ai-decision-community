@@ -1181,6 +1181,18 @@ em {
 .disclosure dd {
   margin: 0;
   color: #526075;
+  line-height: 1.85;
+}
+
+.legal-intro a,
+.disclosure a {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.disclosure strong {
+  color: var(--ink);
 }
 
 .contact-card {
