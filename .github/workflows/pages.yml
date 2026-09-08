@@ -29,7 +29,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html styles.css script.js .nojekyll _site/
-          cp -R assets tokushoho _site/
+          cp -R assets terms tokushoho _site/
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:

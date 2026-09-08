@@ -736,6 +736,12 @@ em {
   text-decoration: underline;
 }
 
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(26px);
@@ -1208,6 +1214,132 @@ em {
   text-align: right;
 }
 
+.terms-content {
+  width: min(920px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 80px 0 130px;
+}
+
+.draft-notice {
+  margin-bottom: 64px;
+  padding: 24px 28px;
+  border: 1px solid #e7c766;
+  background: #fffaf0;
+  color: #66551f;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.draft-notice strong {
+  color: #4e3e0c;
+}
+
+.terms-article {
+  counter-reset: terms-section;
+}
+
+.terms-section {
+  padding: 42px 0;
+  border-top: 1px solid var(--line);
+}
+
+.terms-section:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+.terms-section h2 {
+  margin-bottom: 22px;
+  color: var(--ink);
+  font-size: 24px;
+  letter-spacing: -0.035em;
+}
+
+.terms-section p,
+.terms-section li {
+  color: #4f5c70;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.terms-section ol,
+.terms-section ul {
+  margin: 0;
+  padding-left: 1.7em;
+}
+
+.terms-section p + ol,
+.terms-section p + ul {
+  margin-top: 14px;
+}
+
+.terms-section > ol > li + li,
+.terms-section > ul > li + li {
+  margin-top: 8px;
+}
+
+.terms-section li > ul {
+  margin-top: 8px;
+}
+
+.terms-section strong {
+  color: var(--ink);
+}
+
+.terms-section a,
+.business-info a {
+  color: var(--bright-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.review-marker {
+  color: #9a6500;
+  font-weight: 700;
+}
+
+.business-info {
+  margin-top: 72px;
+  padding: 38px 42px;
+  background: var(--pale-blue);
+}
+
+.business-info h2 {
+  margin-bottom: 22px;
+  font-size: 23px;
+}
+
+.business-info dl {
+  margin: 0;
+}
+
+.business-info dl > div {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 28px;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(72, 126, 203, 0.18);
+}
+
+.business-info dl > div:last-child {
+  border-bottom: 0;
+}
+
+.business-info dt {
+  font-weight: 700;
+}
+
+.business-info dd {
+  margin: 0;
+  color: #526075;
+}
+
+.effective-date {
+  margin-top: 32px;
+  color: var(--ink);
+  font-weight: 700;
+  text-align: right;
+}
+
 @media (max-width: 680px) {
   .legal-hero {
     padding: 76px 0 72px;
@@ -1237,5 +1369,42 @@ em {
 
   .contact-card {
     padding: 30px 24px;
+  }
+
+  .terms-content {
+    width: calc(100% - 40px);
+    padding: 58px 0 90px;
+  }
+
+  .draft-notice {
+    margin-bottom: 45px;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .terms-section {
+    padding: 34px 0;
+  }
+
+  .terms-section h2 {
+    font-size: 21px;
+  }
+
+  .terms-section p,
+  .terms-section li {
+    font-size: 13px;
+  }
+
+  .business-info {
+    margin-top: 50px;
+    padding: 28px 22px;
+  }
+
+  .business-info dl > div {
+    display: block;
+  }
+
+  .business-info dd {
+    margin-top: 5px;
   }
 }
