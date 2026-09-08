@@ -1334,6 +1334,13 @@ em {
   color: #526075;
 }
 
+.business-note {
+  margin: 20px 0 0;
+  color: #526075;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
 .effective-date {
   margin-top: 32px;
   color: var(--ink);
