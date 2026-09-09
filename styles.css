@@ -1315,6 +1315,23 @@ em {
   margin-top: 8px;
 }
 
+.terms-section .parenthesized-list {
+  padding-left: 2.2em;
+  counter-reset: parenthesized-item;
+  list-style: none;
+}
+
+.terms-section .parenthesized-list > li {
+  position: relative;
+  counter-increment: parenthesized-item;
+}
+
+.terms-section .parenthesized-list > li::before {
+  position: absolute;
+  left: -2.2em;
+  content: "(" counter(parenthesized-item) ")";
+}
+
 .terms-section strong {
   color: var(--ink);
 }
