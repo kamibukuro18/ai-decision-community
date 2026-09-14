@@ -77,7 +77,7 @@ export default function Home() {
         <div className="manifesto-grid">
           <p className="section-kicker">WHY WE GATHER</p>
           <div>
-            <p className="manifesto-lead">社内では、<br />「AIを使いこなしている人」で<br />いなければならない。</p>
+            <p className="manifesto-lead">AIと共存できる<br />リテラシーを<br />理解する。</p>
             <div className="manifesto-body">
               <p>けれど経営の現場には、まだ答えのない問いが残ります。投資対効果は見えるのか。現場はついてこられるのか。そもそも、何から試せばいいのか。</p>
               <p><strong>共同体</strong>は、その迷いを役職の外で持ち寄るための、少人数・対話型のクローズドな場です。</p>
