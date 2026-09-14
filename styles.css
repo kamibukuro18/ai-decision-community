@@ -1730,6 +1730,23 @@ em {
   font-weight: 800;
 }
 
+.plan-features strong,
+.plan-features span {
+  display: block;
+}
+
+.plan-features strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.plan-features span {
+  margin-top: 2px;
+  color: #6c788b;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
 .plan-restriction {
   margin: auto 0 0;
   padding: 13px 15px;
