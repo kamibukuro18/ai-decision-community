@@ -1446,9 +1446,25 @@ em {
   object-position: center 28%;
 }
 
+.operator-photo-illustration {
+  padding: 26px;
+  background: var(--pale-blue);
+  object-fit: contain;
+  object-position: center;
+}
+
 .operator-card h2 {
   margin: 11px 0 7px;
   font-size: 28px;
+}
+
+.operator-name-reading {
+  display: block;
+  margin-top: 5px;
+  color: #69758a;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .operator-card > p:not(.mono, .operator-role, .operator-quote),
