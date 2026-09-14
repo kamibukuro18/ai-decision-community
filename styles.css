@@ -1504,6 +1504,33 @@ em {
   margin-top: 7px;
 }
 
+.operator-message {
+  margin: 24px 0 0;
+  padding: 20px 0 20px 20px;
+  border-left: 3px solid var(--blue);
+}
+
+.operator-message p {
+  color: #40506a;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.operator-message p + p {
+  margin-top: 12px;
+}
+
+.operator-subheading {
+  margin-top: 26px;
+  color: var(--ink);
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.operator-subheading + .operator-highlights {
+  margin-top: 12px;
+}
+
 .about-business {
   margin-top: 80px;
 }
