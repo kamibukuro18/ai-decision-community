@@ -192,7 +192,7 @@ export default function Home() {
         </a>
         <p>THE COMMUNITY FOR EXPERIMENTS &amp; DECISIONS.</p>
         <p className="site-footer__operator">
-          運営：株式会社GAIBAKO
+          運営：<a href="https://gaibako.com" target="_blank" rel="noreferrer">株式会社GAIBAKO</a>
           <br />
           埼玉県朝霞市溝沼7-5-16
           <br />
