@@ -77,7 +77,7 @@ export default function Home() {
         <div className="manifesto-grid">
           <p className="section-kicker">WHY WE GATHER</p>
           <div>
-            <p className="manifesto-lead">AIと共に生きる<br />リテラシーを、<br />ともに育てる。</p>
+            <p className="manifesto-lead">AIと生きるための<br />リテラシーを、<br />ともに育てる。</p>
             <div className="manifesto-body">
               <p>AIに何を任せ、何を自分で考えるか。出てきた答えをどう確かめ、目の前の問いにどう向き合うか。AIの可能性と限界を知り、自分で考えて選ぶ。そのためのリテラシーを、経験から育てていきます。</p>
               <p><strong>AI羅深盤</strong>は、経営者同士が疑問や試した経験を持ち寄る、少人数の学びの場です。運営者も参加者も、ともに問い、試し、結果を確かめる。その積み重ねを、自分で判断し、解決へ進む力につなげます。</p>
