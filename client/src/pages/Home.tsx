@@ -9,24 +9,24 @@ const principles = [
   {
     number: "01",
     title: "うまくいかなかったことを、先に話せる。",
-    body: "導入の失敗、社内の戸惑い、判断を保留している理由。整えきれていない実験記録こそ、次の意思決定を豊かにします。",
+    body: "試してうまくいかなかったこと、感じた戸惑い、まだ判断できないこと。途中の記録も持ち寄り、気づいたことを率直に話し合います。",
   },
   {
     number: "02",
-    title: "結論より、問いの解像度を上げる。",
-    body: "誰かの成功パターンをなぞるのではなく、自社にとって何を試し、どこで止まるべきかを、複数の視点で見直します。",
+    title: "問いを深め、確かめ方を考える。",
+    body: "何がわかれば、判断できるのか。仲間の視点に触れながら、自分の問いを整理し、何を試し、どう結果を確かめるかを考えます。",
   },
   {
     number: "03",
-    title: "持ち帰るのは、次の一手だけ。",
-    body: "議論を正解探しにしない。今日の対話から、自分の組織で確かめる小さな実験を一つ選びます。",
+    title: "試した経験を、次の判断につなげる。",
+    body: "結果が出た理由をともに考え、問い直し、また試す。経験を振り返る習慣を重ねながら、自分で考え、解決へ進む力を育てます。",
   },
 ];
 
 const moments = [
-  { time: "01 / BRING", label: "問いを持ち込む", text: "いま、決めきれずにいること。" },
-  { time: "02 / OPEN", label: "経験をひらく", text: "他社の試行錯誤に、耳を澄ます。" },
-  { time: "03 / DECIDE", label: "次の一手を選ぶ", text: "自社に戻って確かめることを定める。" },
+  { time: "01 / BRING", label: "問いを持ち寄る", text: "気になっていることを話し、確かめたい問いを見つける。" },
+  { time: "02 / TRY", label: "小さく試す", text: "仮説を立てて試し、結果や気づきを記録する。" },
+  { time: "03 / REFLECT", label: "確かめ、学び合う", text: "結果の理由を話し合い、次に確かめたい問いにつなげる。" },
 ];
 
 export default function Home() {
@@ -56,10 +56,10 @@ export default function Home() {
           </div>
           <div className="hero-copy animate-reveal delay-1">
             <p className="eyebrow"><span /> PRIVATE PEER COMMUNITY</p>
-            <h1>正解のない<br /><em>AI戦略を、</em><br />ひとりで悩まない。</h1>
+            <h1>AIと共に生きる。<br /><em>その方法を、</em><br />ともに考え、試す。</h1>
             <div className="hero-bottom">
-              <p>経営者同士が本音で実験し、<br className="hidden sm:block" />意思決定の質を高め合う場所。</p>
-              <a className="circle-link" href="#about" aria-label="共同体について読む">
+              <p>経営者同士が問いと経験を持ち寄り、<br className="hidden sm:block" />対話と実験を通じて、判断する力を育てる場所。</p>
+              <a className="circle-link" href="#about" aria-label="AI羅深盤について読む">
                 <ArrowDownRight size={25} strokeWidth={1.4} />
               </a>
             </div>
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="hero-footnote animate-reveal delay-2">
           <span>SCROLL TO ENTER</span>
           <span className="line" />
-          <span>静かな対話から、次の一手へ。</span>
+          <span>対話から実験へ。経験から、新たな問いへ。</span>
         </div>
       </section>
 
@@ -77,10 +77,10 @@ export default function Home() {
         <div className="manifesto-grid">
           <p className="section-kicker">WHY WE GATHER</p>
           <div>
-            <p className="manifesto-lead">AIと共存できる<br />リテラシーを<br />理解する。</p>
+            <p className="manifesto-lead">AIと共に生きる<br />リテラシーを、<br />ともに育てる。</p>
             <div className="manifesto-body">
-              <p>けれど経営の現場には、まだ答えのない問いが残ります。投資対効果は見えるのか。現場はついてこられるのか。そもそも、何から試せばいいのか。</p>
-              <p><strong>共同体</strong>は、その迷いを役職の外で持ち寄るための、少人数・対話型のクローズドな場です。</p>
+              <p>AIに何を任せ、何を自分で考えるか。出てきた答えをどう確かめ、目の前の問いにどう向き合うか。AIの可能性と限界を知り、自分で考えて選ぶ。そのためのリテラシーを、経験から育てていきます。</p>
+              <p><strong>AI羅深盤</strong>は、経営者同士が疑問や試した経験を持ち寄る、少人数の学びの場です。運営者も参加者も、ともに問い、試し、結果を確かめる。その積み重ねを、自分で判断し、解決へ進む力につなげます。</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="section-rail section-rail--light"><span>02</span><i /></div>
         <div className="principles-heading">
           <p className="section-kicker">OUR AGREEMENT</p>
-          <h2>肩書きではなく、<br /><em>問いを持ち寄る。</em></h2>
+          <h2>それぞれの問いから、<br /><em>ともに学ぶ。</em></h2>
         </div>
         <div className="principle-list">
           {principles.map((item) => (
@@ -117,9 +117,9 @@ export default function Home() {
         <div className="room-copy">
           <p className="section-kicker">A ROOM FOR THE REAL</p>
           <h2>わからない、と<br /><em>言えることから。</em></h2>
-          <p>完成した成功談だけでは、経営の判断は進みません。見栄えのしない途中経過、社内にまだ言語化できていない違和感、ひとつ前の失敗。ここでは、そうした「現在地」を置いていきます。</p>
+          <p>まだ言葉にならない疑問、期待と違った結果、途中で止まっている実験。それぞれの「わからない」を持ち寄り、どう確かめられるかを一緒に考えます。互いの経験が、新しい見方や試し方のきっかけになります。</p>
           <div className="quote-mark">“</div>
-          <p className="pullquote">迷いを持ち寄れる場所から、<br />次の一手は見えてくる。</p>
+          <p className="pullquote">ひとりの疑問が、<br />みんなの学びのきっかけになる。</p>
         </div>
       </section>
 
@@ -130,7 +130,7 @@ export default function Home() {
             <p className="section-kicker">THE RHYTHM</p>
             <h2>実験は、<br />対話で深くなる。</h2>
           </div>
-          <p>情報を集めるための会ではありません。自社の文脈に引き寄せて、曖昧な問いを実行可能な仮説へと編み直す時間です。</p>
+          <p>問いから仮説を立て、小さく試してみる。期待どおりだったことも、違ったことも持ち寄り、その理由をともに考える。そこで生まれた問いを、次の実験につなげます。</p>
         </div>
         <div className="moments-line" aria-hidden="true"><span /><i /><span /><i /><span /></div>
         <div className="moments-grid">
@@ -145,11 +145,11 @@ export default function Home() {
       </section>
 
       <section className="image-statement-section">
-        <img src="/manus-storage/kyodotai-blue-circle_841c9600.png" alt="異なる視点が一つの方向へ収束することを表す、青い円弧のオブジェ" />
+        <img src="/manus-storage/kyodotai-blue-circle_841c9600.png" alt="異なる視点の重なりを表す、青い円弧のオブジェ" />
         <div className="image-statement-overlay" />
         <div className="image-statement-copy">
           <p className="eyebrow"><span /> A SMALL CIRCLE, WIDE HORIZON</p>
-          <h2>違う景色を見ているから、<br /><em>判断は強くなる。</em></h2>
+          <h2>違う視点に触れながら、<br /><em>判断のよりどころを育てる。</em></h2>
         </div>
       </section>
 
@@ -159,17 +159,17 @@ export default function Home() {
         <div className="membership-layout">
           <div className="membership-intro">
             <p className="section-kicker">FOR THOSE WHO LEAD</p>
-            <h2>次の決断を、<br />少しだけ<span>軽く。</span></h2>
+            <h2>変化の中で、<br />自分で考え、<span>選ぶ力を。</span></h2>
           </div>
           <div className="membership-content">
-            <p className="membership-lead">AI活用を「導入の話」で終わらせず、経営の問いとして扱いたい方へ。共同体は、率直な対話を大切にできる経営者のための場です。</p>
+            <p className="membership-lead">AIとどう関わり、変化する時代をどう生きるか。AI羅深盤は、その問いに向き合う経営者のためのコミュニティです。互いの経験から学び、自分でも試しながら、考える力と判断する力を育てていきます。</p>
             <ul>
-              <li><Check size={17} strokeWidth={1.8} /> 一人で判断を抱え込みたくない経営者</li>
-              <li><Check size={17} strokeWidth={1.8} /> 他社の実験から、思考を磨きたい経営者</li>
-              <li><Check size={17} strokeWidth={1.8} /> 失敗も含めて、率直に話せる関係を求める経営者</li>
+              <li><Check size={17} strokeWidth={1.8} /> AIとの関わり方を、自分で考え、判断したい経営者</li>
+              <li><Check size={17} strokeWidth={1.8} /> 仲間と実験・検証を重ね、解決する力を育てたい経営者</li>
+              <li><Check size={17} strokeWidth={1.8} /> 疑問や失敗も持ち寄り、対等に学び合いたい経営者</li>
             </ul>
             <a className="text-cta" href="#closing">
-              <span>共同体の考え方を、もっと知る</span><ArrowDownRight size={20} strokeWidth={1.7} />
+              <span>参加について相談する</span><ArrowDownRight size={20} strokeWidth={1.7} />
             </a>
           </div>
         </div>
@@ -178,10 +178,10 @@ export default function Home() {
       <section id="closing" className="closing-section">
         <div className="closing-orbit" aria-hidden="true"><CircleDotDashed size={265} strokeWidth={0.5} /></div>
         <p className="section-kicker">AN OPEN INVITATION</p>
-        <h2>まず、いま抱えている<br /><em>問いを聞かせてください。</em></h2>
-        <p className="closing-note">共同体へのご関心や、場づくりについてのご相談は、<br className="hidden sm:block" />個別の対話からご案内します。</p>
-        <a className="closing-cta" href="mailto:hello@example.com?subject=%E5%85%B1%E5%90%8C%E4%BD%93%E3%81%B8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">
-          <span>対話の入口をひらく</span>
+        <h2>いま気になっていることから、<br /><em>学びを始めませんか。</em></h2>
+        <p className="closing-note">AI羅深盤への参加については、<br className="hidden sm:block" />公式LINEからご相談ください。</p>
+        <a className="closing-cta" href="https://lin.ee/tDM3iqq" target="_blank" rel="noreferrer">
+          <span>公式LINEで参加について相談する</span>
           <CornerDownRight size={24} strokeWidth={1.6} />
         </a>
       </section>
