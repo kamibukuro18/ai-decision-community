@@ -56,9 +56,9 @@ export default function Home() {
           </div>
           <div className="hero-copy animate-reveal delay-1">
             <p className="eyebrow"><span /> PRIVATE PEER COMMUNITY</p>
-            <h1>AIと共に生きる。<br /><em>その方法を、</em><br />対話と実験で探る。</h1>
+            <h1>AIと共存する。<br /><em>自分で考え、</em><br />選ぶ力を育てる。</h1>
             <div className="hero-bottom">
-              <p>経営者同士が問いと経験を持ち寄り、<br className="hidden sm:block" />対話と実験を通じて、判断する力を育てる場所。</p>
+              <p>経営者同士が問いを持ち寄り、AIで試し、結果を確かめる。<br className="hidden sm:block" />失敗も学びに変えながら、AIに任せること、自分で判断することを探っていくコミュニティです。</p>
               <a className="circle-link" href="#about" aria-label="AI羅深盤について読む">
                 <ArrowDownRight size={25} strokeWidth={1.4} />
               </a>
