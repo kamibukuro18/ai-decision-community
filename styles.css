@@ -1413,6 +1413,7 @@ em {
 .operator-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 30px;
   margin-top: 28px;
 }
@@ -1437,15 +1438,27 @@ em {
   text-align: center;
 }
 
+.operator-photo {
+  width: 100%;
+  height: 260px;
+  margin-bottom: 28px;
+  object-fit: cover;
+  object-position: center 28%;
+}
+
 .operator-card h2 {
   margin: 11px 0 7px;
   font-size: 28px;
 }
 
-.operator-card > p:last-child,
+.operator-card > p:not(.mono, .operator-role, .operator-quote),
 .operator-role,
 .company-description {
   color: #5c687b;
+}
+
+.operator-card > p:not(.mono, .operator-role, .operator-quote) + p {
+  margin-top: 12px;
 }
 
 .operator-role {
@@ -1453,6 +1466,26 @@ em {
   margin-bottom: 18px;
   font-size: 13px;
   font-weight: 700;
+}
+
+.operator-quote {
+  margin-bottom: 16px;
+  color: var(--bright-blue);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.operator-highlights {
+  margin: 22px 0 0;
+  padding: 18px 0 0 1.2em;
+  border-top: 1px solid var(--line);
+  color: #5c687b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.operator-highlights li + li {
+  margin-top: 7px;
 }
 
 .about-business {
@@ -1906,6 +1939,10 @@ em {
 
   .operator-photo-placeholder {
     min-height: 220px;
+  }
+
+  .operator-photo {
+    height: 320px;
   }
 
   .operator-role {
