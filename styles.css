@@ -132,6 +132,17 @@ em {
   transform: translate(3px, 3px);
 }
 
+/* トップページのPC表示では、ボタンが暗い写真の上に乗るため白地のプレートにする */
+@media (min-width: 901px) {
+  body:not(.legal-page) .header-cta {
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--ink);
+    box-shadow: 0 6px 24px rgba(7, 23, 47, 0.18);
+  }
+}
+
 .hero {
   position: relative;
   min-height: min(850px, 100vh);
@@ -216,6 +227,16 @@ em {
   font-size: 14px;
   font-weight: 500;
   line-height: 2;
+}
+
+/* 説明文が右側の暗い写真にかからないよう、白い面の幅に収める */
+.hero-intro p {
+  max-width: 31em;
+}
+
+/* 改行位置で語句が分かれないようにする */
+.keep {
+  display: inline-block;
 }
 
 .circle-link {
@@ -901,9 +922,9 @@ em {
   display: grid;
   min-height: 145px;
   align-items: center;
-  padding: 34px 4.5vw;
-  grid-template-columns: 160px 1.5fr 1.3fr auto auto;
-  gap: 34px;
+  padding: 40px 4.5vw;
+  grid-template-columns: 160px minmax(160px, 1fr) minmax(300px, 1.5fr);
+  gap: 26px 40px;
   background: #f7f9fd;
   color: #5f6c80;
   font-size: 10px;
@@ -929,8 +950,13 @@ em {
 
 .site-footer nav {
   display: flex;
+  grid-column: 1 / 3;
   flex-wrap: wrap;
   gap: 8px 20px;
+}
+
+.site-footer .copyright {
+  justify-self: end;
 }
 
 .reveal {
@@ -1049,12 +1075,7 @@ em {
   }
 
   .site-footer {
-    grid-template-columns: 135px 1fr 1fr;
-  }
-
-  .site-footer nav,
-  .copyright {
-    grid-column: span 1;
+    grid-template-columns: 135px minmax(0, 1fr) minmax(0, 1.3fr);
   }
 }
 
